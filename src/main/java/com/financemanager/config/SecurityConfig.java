@@ -68,7 +68,8 @@ public class SecurityConfig {
                 "http://127.0.0.1:5173",
                 "http://localhost:4173",
             "http://127.0.0.1:4173",
-            "https://syfe-assignment-sand.vercel.app"
+            "https://syfe-assignment-sand.vercel.app",
+            "https://syfe-backend-z62o.onrender.com"
         ));
         configuration.setAllowedMethods(List.of("GET", "POST", "PUT", "DELETE", "OPTIONS"));
         configuration.setAllowedHeaders(List.of("*"));

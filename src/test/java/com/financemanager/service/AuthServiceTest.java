@@ -3,6 +3,7 @@ package com.financemanager.service;
 import com.financemanager.entity.User;
 import com.financemanager.exception.BadRequestException;
 import com.financemanager.exception.ConflictException;
+import com.financemanager.exception.UnauthorizedException;
 import com.financemanager.repository.UserRepository;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -84,6 +85,6 @@ class AuthServiceTest {
 
         when(authenticationManager.authenticate(any())).thenThrow(new BadCredentialsException("bad"));
 
-        assertThatThrownBy(() -> authService.login(req, httpRequest)).isInstanceOf(BadRequestException.class);
+        assertThatThrownBy(() -> authService.login(req, httpRequest)).isInstanceOf(UnauthorizedException.class);
     }
 }

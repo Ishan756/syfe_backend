@@ -5,6 +5,7 @@ import com.financemanager.dto.request.RegisterRequest;
 import com.financemanager.entity.User;
 import com.financemanager.exception.BadRequestException;
 import com.financemanager.exception.ConflictException;
+import com.financemanager.exception.UnauthorizedException;
 import com.financemanager.repository.UserRepository;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpSession;
@@ -69,7 +70,7 @@ public class AuthService {
             session.setAttribute(HttpSessionSecurityContextRepository.SPRING_SECURITY_CONTEXT_KEY, context);
 
         } catch (BadCredentialsException ex) {
-            throw new BadRequestException("Invalid username or password");
+            throw new UnauthorizedException("Invalid username or password");
         }
 
         Map<String, String> response = new HashMap<>();
