@@ -8,7 +8,7 @@ A Spring Boot REST API for managing personal finances — track income, expenses
 <!-- Demo video -->
 ## Demo Video
 
-[Watch the demo video (Google Drive)](https://drive.google.com/file/d/114XqTD8SkB5xzTqnGgTTlvDrdc6mFrEL/view?usp=sharing)
+[Watch the demo video (Google Drive)](https://drive.google.com/file/d/1s-CP8ZbSG7ZiSetZ8tZg-iunovnNEZ79/view?usp=sharing)
 
 ---
 
@@ -163,10 +163,8 @@ If the images are not present locally, add the PNG files to `screenshots/` with 
 
 ## Deployment Link
 
-Deployment is not published yet. Add the live link here after deployment, for example:
-
-- Frontend (Vercel): [https://syfe-assignment-sand.vercel.app/](https://syfe-assignment-sand.vercel.app/)
-- Backend (Render): [https://syfe-assignment-1.onrender.com/](https://syfe-assignment-1.onrender.com/)
+- Frontend (Vercel): [https://frontend-phi-blush-46.vercel.app/](https://frontend-phi-blush-46.vercel.app/)
+- Backend (Render): [https://syfe-backend-z62o.onrender.com/](https://syfe-backend-z62o.onrender.com/)
 
 ## Deploying on Render
 
